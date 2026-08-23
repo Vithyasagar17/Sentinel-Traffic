@@ -1,0 +1,88 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  body {
+    background-color: #0A0B0E;
+    color: #f1f5f9;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  }
+
+  code, pre, .font-mono {
+    font-family: 'JetBrains Mono', monospace;
+  }
+}
+
+/* Custom Leaflet Map styling for Sleek Interface theme */
+.leaflet-container {
+  background-color: #14161F !important;
+  outline: none;
+  font-family: inherit;
+}
+
+/* Dark tiles styling */
+.dark-tiles .leaflet-tile {
+  filter: brightness(0.65) invert(1) contrast(3.2) hue-rotate(210deg) saturate(0.25) brightness(0.7);
+}
+
+/* Marker pulse animations */
+@keyframes camera-radar {
+  0% {
+    transform: scale(0.9);
+    opacity: 0.8;
+  }
+  50% {
+    transform: scale(1.6);
+    opacity: 0.2;
+  }
+  100% {
+    transform: scale(2.4);
+    opacity: 0;
+  }
+}
+
+@keyframes vehicle-ping {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  75%, 100% {
+    transform: scale(2.5);
+    opacity: 0;
+  }
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -32;
+  }
+}
+
+.animate-radar {
+  animation: camera-radar 2.5s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+
+.animate-ping-slow {
+  animation: vehicle-ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.trajectory-polyline {
+  stroke-dasharray: 8, 6;
+  animation: dash-flow 1s linear infinite;
+}
+
+/* Custom scrollbar for sleek interface */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0B0E;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
