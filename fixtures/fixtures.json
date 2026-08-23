@@ -1,0 +1,45 @@
+[
+  {
+    "event_id": "fixture_001",
+    "camera_id": "CAM_A",
+    "timestamp": "2026-08-22T14:32:10",
+    "plate": "KA01AB1234",
+    "plate_confidence": 0.94,
+    "vehicle_class": "car",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "track_id": 17
+  },
+  {
+    "event_id": "fixture_002",
+    "camera_id": "CAM_B",
+    "timestamp": "2026-08-22T14:40:10",
+    "plate": "KA01AB1234",
+    "plate_confidence": 0.91,
+    "vehicle_class": "car",
+    "latitude": 12.9800,
+    "longitude": 77.6050,
+    "track_id": 42
+  },
+  {
+    "event_id": "fixture_003",
+    "camera_id": "CAM_C",
+    "timestamp": "2026-08-22T14:35:00",
+    "plate": "MH12XY5678",
+    "vehicle_class": "car",
+    "latitude": 12.9750,
+    "longitude": 77.6000,
+    "track_id": 8
+  },
+  {
+    "event_id": "fixture_004",
+    "camera_id": "CAM_A",
+    "timestamp": "2026-08-22T14:33:00",
+    "plate": "ka 01 ab 1234",
+    "plate_confidence": 0.60,
+    "vehicle_class": "car",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "track_id": 18
+  }
+]
