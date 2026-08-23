@@ -26,6 +26,7 @@
     "camera_id": "CAM_C",
     "timestamp": "2026-08-22T14:35:00",
     "plate": "MH12XY5678",
+    "plate_confidence": 0.88,
     "vehicle_class": "car",
     "latitude": 12.9750,
     "longitude": 77.6000,

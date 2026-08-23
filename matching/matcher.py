@@ -236,7 +236,7 @@ def build_trajectories(events, graph):
 # ---------------------------------------------------------------------------
 
 if __name__ == "__main__":
-    events = load_events("fixtures.json")
+    events = load_events("C:/Users/Vithyasagar/OneDrive/Desktop/Sentinel-Traffic/Sentinel-Traffic/fixtures/fixtures.json")
     candidates = generate_candidates(events)
     results = [score_candidate(e1, e2) for e1, e2 in candidates]
 
