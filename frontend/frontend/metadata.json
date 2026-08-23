@@ -1,0 +1,6 @@
+{
+  "name": "SIH Sentinel-Traffic Dashboard",
+  "description": "Real-time GIS vehicle tracking, automated camera re-identification, route trajectory mapping, traffic risk estimation, and impossible-travel anomaly detection.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
