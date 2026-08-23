@@ -1,51 +1,24 @@
-﻿{
-  "meta": {
-    "source": "mock_generator",
-    "version": "1.0",
-    "generated_at": "2026-08-23T10:00:00Z"
+﻿[
+  {
+    "event_id": "fixture_001",
+    "camera_id": "CAM_A",
+    "timestamp": "2026-08-22T14:32:10",
+    "plate": "KA01AB1234",
+    "plate_confidence": 0.94,
+    "vehicle_class": "car",
+    "latitude": 12.9716,
+    "longitude": 77.5946,
+    "track_id": 17
   },
-  "events": [
-    {
-      "transaction_id": "evt-001",
-      "timestamp": "2026-08-23T08:15:30Z",
-      "camera_id": "CAM-01",
-      "image_hash": "abc123",
-      "ocr_raw_text": "KA-03-H-1234",
-      "ocr_confidence": 0.92,
-      "plate_candidate": "KA03H1234",
-      "plausibility_flags": [],
-      "final_verdict": "PASS",
-      "vehicle_class": "Sedan",
-      "color": "White",
-      "speed_kmph": 45
-    },
-    {
-      "transaction_id": "evt-002",
-      "timestamp": "2026-08-23T08:16:45Z",
-      "camera_id": "CAM-02",
-      "image_hash": "def456",
-      "ocr_raw_text": "KA-03-H-1234",
-      "ocr_confidence": 0.88,
-      "plate_candidate": "KA03H1234",
-      "plausibility_flags": ["GEO_MISMATCH"],
-      "final_verdict": "MANUAL_REVIEW",
-      "vehicle_class": "Sedan",
-      "color": "White",
-      "speed_kmph": 52
-    },
-    {
-      "transaction_id": "evt-003",
-      "timestamp": "2026-08-23T08:17:10Z",
-      "camera_id": "CAM-03",
-      "image_hash": "ghi789",
-      "ocr_raw_text": "TN-07-AB-9999",
-      "ocr_confidence": 0.45,
-      "plate_candidate": "TN07AB9999",
-      "plausibility_flags": ["INVALID_FORMAT"],
-      "final_verdict": "FAIL",
-      "vehicle_class": "SUV",
-      "color": "Black",
-      "speed_kmph": 0
-    }
-  ]
-}
+  {
+    "event_id": "fixture_002",
+    "camera_id": "CAM_B",
+    "timestamp": "2026-08-22T14:35:45",
+    "plate": "KA01AB1234",
+    "plate_confidence": 0.89,
+    "vehicle_class": "car",
+    "latitude": 12.9750,
+    "longitude": 77.5990,
+    "track_id": 42
+  }
+]
